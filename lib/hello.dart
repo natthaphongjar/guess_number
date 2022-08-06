@@ -2,6 +2,7 @@ import 'dart:io';
 import 'Game.dart';
 void main() {
   bool active = true;
+
   print('╔═════════════════════════════════════════════');
   print('║\t\t\t\tGUESS THE NUMBER');
   print("╟═════════════════════════════════════════════");
@@ -13,7 +14,7 @@ void main() {
       stdout.write('║\tGuess the number between 1 and 100 : ');
       var input = stdin.readLineSync();
       var o = int.tryParse(input!);
-      //print('o');
+
       if (o == null) {
         continue;
       }
