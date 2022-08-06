@@ -9,10 +9,11 @@ void main() {
   do {
     var g = new Game();
     for (;;) {
-  
+
       stdout.write('║\tGuess the number between 1 and 100 : ');
       var input = stdin.readLineSync();
       var o = int.tryParse(input!);
+      //print('o');
       if (o == null) {
         continue;
       }
