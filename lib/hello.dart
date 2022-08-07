@@ -51,7 +51,7 @@ void main() {
   print("");
   print("You've played ${mylist.length} games");
   for(int i=0;i<mylist.length;i++){
-    print('🚀 Game #$i: ${mylist[i]} guesses');
+    print('🚀 Game #${i+1}: ${mylist[i]} guesses');
   }
 
 }
