@@ -3,10 +3,11 @@ import 'dart:math';
 class Game {
   var answer;
   var total;
-  Game() {
+
+  Game({var max = 100}) {
     total =0;
     var r = new Random();
-    answer = r.nextInt(100) + 1;
+    answer = r.nextInt(max) + 1;
   }
   bool Check(int n) {
     total++;
